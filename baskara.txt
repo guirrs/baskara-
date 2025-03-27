@@ -1,0 +1,26 @@
+#include <Arduino.h>
+#define pinLed 5
+
+//* PROTOTIPO DA FUNCAO
+int calculoSegundoGrau(int, int, int);
+
+void setup()
+{
+Serial.begin(9600);
+int raizDaFuncao = calculoSegundoGrau(2, -7, 3);
+Serial.println(raizDaFuncao);
+}
+
+void loop()
+{
+ 
+}
+
+// quando eu crio uma chave, eu preciso de um return para declarar o resultado, nessa mesma chave, eh preciso declarar o 
+// tipo dela
+ int calculoSegundoGrau(int a, int b, int c)
+{
+  int resultado;
+  resultado = (-b + sqrt(sq(b) - (4*a*c))) / (2*a);
+  return resultado;
+}
