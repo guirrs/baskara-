@@ -9,6 +9,13 @@ void setup()
 Serial.begin(9600);
 int raizDaFuncao = calculoSegundoGrau(2, -7, 3);
 Serial.println(raizDaFuncao);
+
+//criando se uma funcao, vocce pode usar ela varias vezes no sistema, apenas fazendo ela uma vez
+raizDaFuncao = calculoSegundoGrau(1, 5, 6);
+Serial.println(raizDaFuncao);
+
+raizDaFuncao = calculoSegundoGrau(1, 5, 14);
+Serial.println(raizDaFuncao);
 }
 
 void loop()
